@@ -25,8 +25,8 @@ public class Hook {
 	}
 	@Before
 	public void beforeScenario() throws Throwable {
-		//String browser = PropertyUtil.getPropertyValue("browser");
-		String browser = System.getProperty("browser");
+		String browser = PropertyUtil.getPropertyValue("browser");
+		//String browser = System.getProperty("browser");
 		if (browser.equalsIgnoreCase("chrome"))
 		{
 			WebDriverManager.chromedriver().setup();
